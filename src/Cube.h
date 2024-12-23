@@ -1,4 +1,4 @@
-#pragma once
+#pragma once // 
 
 class Cube{
     public:
@@ -6,5 +6,5 @@ class Cube{
         double getSurfaceArea();
         void setSide(double side);
     private:
-        double side_;
+        double side_; // google style
 };

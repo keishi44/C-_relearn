@@ -1,20 +1,23 @@
 #include <iostream>
-using namespace std;
+
 
 int main(){
     int size;
-    cout << "Size : ";
-    cin >> size;
+    std::cout << "Size : ";
+    std::cin >> size;
 
-    int* myArray = new int[size];
+    int* myArray = new int[size]; // dynamic memory (new , delete)
 
     for(int i = 0; i < size; i++){
-        cout << "Array[" << i << "] : ";
-        cin >> *(myArray + i);
+        std::cout << "Array[" << i << "] : ";
+        std::cin >> *(myArray + i);
     }
 
     for(int i = 0; i < size; i++){
-        cout << myArray[i] << " ";
+        std::cout << myArray[i] << " ";
     }
+
+    delete[]myArray;
+    myArray = NULL;
 
 }
