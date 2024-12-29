@@ -1,14 +1,12 @@
 #include <iostream>
-#include "Cube.h"
-#include "Cube.cpp"
-
+#include "Square.h"
+#include "Square.cpp"
 
 int main(){
-    Cube  c;
-    c.setSide(3);
-
-    double volume = c.getVolume();
-    double surfaceArea = c.getSurfaceArea();
+    Square s;
+    s.setSide(5);
+    double area = s.getArea();
+    double volume = s.getVolume();
+    std::cout << "Area : " <<   area<< std::endl;
     std::cout << "Volume : " << volume << std::endl;
-    std::cout << "Surface area : " << surfaceArea << std::endl;
 }

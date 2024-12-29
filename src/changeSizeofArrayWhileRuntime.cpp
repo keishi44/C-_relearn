@@ -1,6 +1,4 @@
 #include <iostream>
-
-
 int main(){
     int size;
     std::cout << "Size : ";
@@ -18,6 +16,4 @@ int main(){
     }
 
     delete[]myArray;
-    myArray = NULL;
-
 }
